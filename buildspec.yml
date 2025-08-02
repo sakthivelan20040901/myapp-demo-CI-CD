@@ -5,14 +5,15 @@ phases:
     runtime-versions:
       nodejs: 18
     commands:
-      - echo Installing Node.js dependencies...
+      - echo Installing dependencies...
       - npm install
   build:
     commands:
-      - echo Build started on `date`
-      - npm run build
+      - echo Skipping build for simple Node.js app
+  post_build:
+    commands:
+      - echo Build completed on `date`
 
 artifacts:
   files:
     - '**/*'
-  base-directory: build
