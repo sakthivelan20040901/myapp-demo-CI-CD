@@ -1,0 +1,12 @@
+{
+  "name": "myapp",
+  "version": "1.0.0",
+  "description": "A simple Node.js app for CodePipeline demo",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"No tests specified\" && exit 0"
+  },
+  "author": "Sakthivelan",
+  "license": "ISC"
+}
